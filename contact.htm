@@ -1,0 +1,82 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Nicole Busch</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="Nicole Busch">
+<meta name="keywords" content="Nicole Busch">
+<meta name="robots" content="index">
+<meta name="robots" content="follow">
+
+<script type="text/javascript">
+function chkFormular () {
+  if (document.Formular.Name.value == "") {
+    alert("Bitte Ihren Namen eingeben!");
+    document.Formular.Name.focus();
+    return false;
+  }
+  if (document.Formular.Email.value.indexOf("@") == -1) {
+    alert("Bitte Ihre Email-Adresse eingeben!");
+    document.Formular.Email.focus();
+    return false;
+  }
+}
+</script>
+<link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body leftmargin="0" topmargin="0" bottommargin="0" rightmargin="0" >
+<table width="970" height="570" border="0"><tr valign="top">
+<td>
+    <table border="0" width="250" height="500">
+    <tr valign="top">
+        <td width="150" rowspan="8"><img src="images/menue.gif"></td>
+        <td height="63">&nbsp;</td>
+    </tr>
+    <tr><td width="130" height="60" align="left"><a class="menue" href="index.htm">Home</td></tr>
+    <tr><td height="60"><a class="menue" href="biography.htm">Biografie</a></td></tr>
+    <tr><td height="60"><a class="menue" href="gallery01.htm">Galerie</td></tr>
+    <tr><td height="60"><a class="menueON" href="contact.htm">Kontakt</td></tr>
+    <tr><td height="60"><a class="menue" href="impressum.htm">Impressum</td></tr>
+    <tr><td height="67">&nbsp;</td></tr>
+    </table>
+</td>
+
+<td width="650">
+    <a class="logo"><p align="right">Nicole Busch
+    <hr/>
+    <hr style="color:gray; background-color:gray; height:5px;
+        margin-right:0; text-align:right; border:1px;" />
+    </p>
+
+
+
+</a>
+    <a class="menue"><b>Kontakt:</b><p>
+    <a class="text"><b>Nicole Busch<br></b>
+    Email: <a href="mailto:info@nicole-busch.de" class="linktext">info@nicole-busch.de</a><p>
+
+    <form name="Formular" action="mailto:info@nicole-busch.de" method=post 
+        enctype="text/plain" onSubmit="return chkFormular()"><p>
+    <table width="100%" border="0" >
+        <tr>
+            <td><a class="text">Name</td>
+            <td><input name="Name" size="60"></td>
+        </tr>
+        <tr>
+            <td><a class="text">Email:</td>
+            <td><input name="Email" size="60"></td>
+        </tr>
+        <tr>
+            <td valign="top"><a class="text">Text:</td>
+            <td><textarea name="Text" cols="46" rows="5"></textarea></td>
+        </tr>
+    </table><p>
+    <input type="submit" value=" Absenden ">
+    <input type="reset" value=" Abbrechen">
+    </form>
+</td>
+
+</tr></table>
+</body>
+</html>
